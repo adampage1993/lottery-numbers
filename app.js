@@ -1,23 +1,3 @@
-const randomMessages = {
-  firstMessages: [1, 2, 3, 4],
-  secondMessages: [5, 6, 7, 8],
-  thirdMessages: [9, 10, 11, 12],
-};
-
-const getMessage = () => {
-  const message1 =
-    randomMessages.firstMessages[Math.floor(Math.random() * randomMessages.firstMessages.length)];
-  const message2 =
-    randomMessages.secondMessages[Math.floor(Math.random() * randomMessages.secondMessages.length)];
-  const message3 =
-    randomMessages.thirdMessages[Math.floor(Math.random() * randomMessages.thirdMessages.length)];
-
-  console.log(`Your first message is ${message1}.`);
-  console.log(`Your second message is ${message2}.`);
-  console.log(`Your third message is ${message3}.`);
-};
-getMessage();
-
 const lotteryNumbers = {
   lotteryNumber1: [
     1,
@@ -282,3 +262,18 @@ const lotteryNumbers = {
   lotteryNumber6: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   lotteryNumber7: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
 };
+
+const getLotteryNumbers = () => {
+  const num1 = lotteryNumbers.lotteryNumber1[Math.floor(Math.random() * lotteryNumbers.lotteryNumber1.length)];
+  const num2 = lotteryNumbers.lotteryNumber2[Math.floor(Math.random() * lotteryNumbers.lotteryNumber2.length)];
+  const num3 = lotteryNumbers.lotteryNumber3[Math.floor(Math.random() * lotteryNumbers.lotteryNumber3.length)];
+  const num4 = lotteryNumbers.lotteryNumber4[Math.floor(Math.random() * lotteryNumbers.lotteryNumber4.length)];
+  const num5 = lotteryNumbers.lotteryNumber5[Math.floor(Math.random() * lotteryNumbers.lotteryNumber5.length)];
+  const num6 = lotteryNumbers.lotteryNumber6[Math.floor(Math.random() * lotteryNumbers.lotteryNumber6.length)];
+  const num7 = lotteryNumbers.lotteryNumber7[Math.floor(Math.random() * lotteryNumbers.lotteryNumber7.length)];
+  
+
+  console.log(`Your lottery numbers are: ${num1} ${num2} ${num3} ${num4} ${num5} ${num6} ${num7}`);
+};
+
+getLotteryNumbers();
