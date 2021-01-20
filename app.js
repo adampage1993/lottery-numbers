@@ -277,5 +277,3 @@ const getLotteryNumbers = () => {
 };
 
 getLotteryNumbers();
-
-console.log('Hello Noy Baloy');
